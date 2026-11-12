@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DANZZ MODS STORE</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #090909;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #151515;
+  padding: 22px;
+  text-align: center;
+  border-bottom: 2px solid red;
+}
+
+.logo {
+  font-size: 29px;
+  font-weight: 900;
+  color: red;
+}
+
+header p {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 15px;
+  background: linear-gradient(140deg, #450000, #090909);
+}
+
+.hero h1 {
+  font-size: 30px;
+}
+
+.hero span {
+  color: red;
+}
+
+.hero p {
+  color: #bbb;
+}
+
+button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 9px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#produk {
+  display: none;
+  padding: 20px 15px;
+}
+
+.card {
+  background: #191919;
+  border: 1px solid #444;
+  border-radius: 14px;
+  overflow: hidden;
+  max-width: 550px;
+  margin: auto;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.info {
+  padding: 20px;
+}
+
+.info h2 {
+  font-size: 21px;
+}
+
+.harga {
+  color: #00ed65;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.order {
+  display: block;
+  background: #00b84a;
+  color: white;
+  text-decoration: none;
+  padding: 16px;
+  border-radius: 9px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #888;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">DANZZ MODS</div>
+  <p>GTA SA-MP MODIFICATION STORE</p>
+</header>
+
+<div class="hero">
+  <h1>WELCOME TO <span>DANZZ</span></h1>
+  <p>Website resmi Danzz Mods</p>
+
+  <button onclick="bukaProduk()">
+    LIHAT PRODUK
+  </button>
+</div>
+
+<section id="produk">
+
+  <div class="card">
+
+    <img src="preview.jpg"
+    alt="Preview Modpack GTA">
+
+    <div class="info">
+
+      <h2>MODPACK GANSGTER FOR SHALE</h2>
+
+      <div class="harga">
+        Rp15.000
+      </div>
+
+      <a class="order"
+      href="https://wa.me/6285865278854?text=Halo%20Danzz%2C%20saya%20mau%20order%20Modpack%20Gangster%20for%20Shale%20Rp15.000"
+      target="_blank">
+
+        ORDER SEKARANG
+
+      </a>
+
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <b>DANZZ MODS</b>
+  <p>© 2026 All Rights Reserved</p>
+</footer>
+
+<script>
+function bukaProduk() {
+  const produk = document.getElementById("produk");
+
+  produk.style.display = "block";
+
+  produk.scrollIntoView({
+    behavior: "smooth"
+  });
+}
+</script>
+
+</body>
+</html>
